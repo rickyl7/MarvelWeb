@@ -10,6 +10,10 @@ namespace MarvelWebApi.Controllers
     [ApiController]
     public class CharactersController : ControllerBase
     {
+        public CharactersController()
+        {
+
+        }
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
