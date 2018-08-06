@@ -1,0 +1,22 @@
+﻿[
+  {
+    "Name": "Captain America",
+    "Roles": [ 0, 1 ]
+  },
+  {
+    "Name": "Mercenary Riot Guard",
+    "Roles": [ 0 ]
+  },
+  {
+    "Name": "Hand Sentry",
+    "Roles": [ 0 ]
+  },
+  {
+    "Name": "Luke Cage",
+    "Roles": [ 0 ]
+  },
+  {
+    "Name": "Kingpin",
+    "Roles": [ 0 ]
+  }
+]

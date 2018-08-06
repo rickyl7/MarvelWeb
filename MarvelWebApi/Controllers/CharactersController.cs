@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MarvelWebApi.Entities;
+using MarvelWebApi.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MarvelWebApi.Controllers
@@ -10,15 +12,18 @@ namespace MarvelWebApi.Controllers
     [ApiController]
     public class CharactersController : ControllerBase
     {
-        public CharactersController()
-        {
+        private readonly ICharacterRepository _characterRepository;
 
+        public CharactersController(ICharacterRepository characterRepository)
+        {
+            _characterRepository = characterRepository;
         }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(_characterRepository.GetAll());
         }
 
         // GET api/values/5
