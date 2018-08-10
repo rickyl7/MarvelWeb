@@ -6,4 +6,30 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@Model.Message</h3>
 
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Defense</th>
+            <th>Purge</th>
+            <th>Utility</th>
+            <th>Burst</th>
+            <th>AOE</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var character in Model.Characters)
+        {
+        <tr>
+            <td>@character.Name</td>
+            <td>@character.Roles.Contains(Entities.Character.RoleEnum.Defense)</td>
+            <td>@character.Roles.Contains(Entities.Character.RoleEnum.Purge)</td>
+            <td>@character.Roles.Contains(Entities.Character.RoleEnum.Utility)</td>
+            <td>@character.Roles.Contains(Entities.Character.RoleEnum.Burst)</td>
+            <td>@character.Roles.Contains(Entities.Character.RoleEnum.AOE)</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
 <p>Use this area to provide additional information.</p>
