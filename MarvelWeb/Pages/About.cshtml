@@ -6,30 +6,21 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@Model.Message</h3>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Defense</th>
-            <th>Purge</th>
-            <th>Utility</th>
-            <th>Burst</th>
-            <th>AOE</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var character in Model.Characters)
+@(Html
+        .Grid(Model.Characters)
+        .Build(columns =>
         {
-        <tr>
-            <td>@character.Name</td>
-            <td>@character.Roles.Contains(Entities.Character.RoleEnum.Defense)</td>
-            <td>@character.Roles.Contains(Entities.Character.RoleEnum.Purge)</td>
-            <td>@character.Roles.Contains(Entities.Character.RoleEnum.Utility)</td>
-            <td>@character.Roles.Contains(Entities.Character.RoleEnum.Burst)</td>
-            <td>@character.Roles.Contains(Entities.Character.RoleEnum.AOE)</td>
-        </tr>
-        }
-    </tbody>
-</table>
+            columns.Add(model => model.Name).Titled("Name");
+            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.AOE) ? "X" : string.Empty).Titled("AOE");
+            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Burst) ? "X" : string.Empty).Titled("Burst");
+            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Defense) ? "X" : string.Empty).Titled("Defence");
+            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Purge) ? "X" : string.Empty).Titled("Purge");
+            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Utility) ? "X" : string.Empty).Titled("Utility");
+        })
+        .Empty("No data found")
+        .Filterable()
+        .Sortable()
+        .Pageable()
+)
 
 <p>Use this area to provide additional information.</p>
