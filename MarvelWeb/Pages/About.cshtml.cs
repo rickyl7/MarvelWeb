@@ -22,7 +22,8 @@ namespace MarvelWeb.Pages
 
         public async Task OnGet()
         {
-            var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44350/api/Characters/");
+            //var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44350/api/Characters/");
+            var request = new HttpRequestMessage(HttpMethod.Get, "https://marvelwebapi.azurewebsites.net/api/Characters/");
 
             var client = _clientFactory.CreateClient();
 
