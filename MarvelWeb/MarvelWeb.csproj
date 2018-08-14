@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="NonFactors.Grid.Mvc6" Version="3.1.0" />
   </ItemGroup>
 
 </Project>
