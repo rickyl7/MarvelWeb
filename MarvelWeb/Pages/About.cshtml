@@ -10,17 +10,15 @@
         .Grid(Model.Characters)
         .Build(columns =>
         {
-            columns.Add(model => model.Name).Titled("Name");
-            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.AOE) ? "X" : string.Empty).Titled("AOE");
-            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Burst) ? "X" : string.Empty).Titled("Burst");
-            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Defense) ? "X" : string.Empty).Titled("Defence");
-            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Purge) ? "X" : string.Empty).Titled("Purge");
-            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Utility) ? "X" : string.Empty).Titled("Utility");
+            columns.Add(model => model.Name).Titled("Name").Sortable(true).InitialSort(GridSortOrder.Asc);
+            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.AOE) ? "X" : string.Empty).Named("AOE").Titled("AOE").Sortable(true).FirstSort(GridSortOrder.Desc);
+            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Burst) ? "X" : string.Empty).Named("Burst").Titled("Burst").Sortable(true).FirstSort(GridSortOrder.Desc);
+            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Defense) ? "X" : string.Empty).Named("Defence").Titled("Defence").Sortable(true).FirstSort(GridSortOrder.Desc);
+            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Purge) ? "X" : string.Empty).Named("Purge").Titled("Purge").Sortable(true).FirstSort(GridSortOrder.Desc);
+            columns.Add(model => model.Roles.Any(r => r == Entities.Character.RoleEnum.Utility) ? "X" : string.Empty).Named("Utility").Titled("Utility").Sortable(true).FirstSort(GridSortOrder.Desc);
         })
         .Empty("No data found")
         .Filterable()
-        .Sortable()
-        .Pageable()
 )
 
 <p>Use this area to provide additional information.</p>
