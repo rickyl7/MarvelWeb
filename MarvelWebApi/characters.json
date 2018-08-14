@@ -21,7 +21,7 @@
   },
   {
     "Name": "Scarlet Witch",
-    "Roles": [ 0, 1 ]
+    "Roles": [ 0, 2 ]
   },
   {
     "Name": "Ant-Man",
@@ -61,11 +61,11 @@
   },
   {
     "Name": "Vision",
-    "Roles": [ 1, 3, 4 ]
+    "Roles": [ 1, 2, 3 ]
   },
   {
     "Name": "Yondu",
-    "Roles": [ 1, 3, 4 ]
+    "Roles": [ 1, 2, 3 ]
   },
   {
     "Name": "Nick Fury",
@@ -97,11 +97,11 @@
   },
   {
     "Name": "Thanos",
-    "Roles": [ 2, 3 ]
+    "Roles": [ 2, 3, 4 ]
   },
   {
     "Name": "Ultron",
-    "Roles": [ 2, 3 ]
+    "Roles": [ 2, 3, 4 ]
   },
   {
     "Name": "Star-Lord",
