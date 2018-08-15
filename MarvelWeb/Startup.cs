@@ -31,7 +31,11 @@ namespace MarvelWeb
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddHttpClient();
+            services.AddHttpClient("MarvelWebClient", client =>
+            {
+                client.BaseAddress = new Uri("https://localhost:44350/");
+                //client.BaseAddress = new Uri("https://marvelwebapi.azurewebsites.net/");
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
