@@ -1,166 +1,166 @@
 ﻿[
   {
     "Name": "Captain America",
-    "Roles": [ 0, 1 ]
+    "Roles": [ "Defense", "Purge" ]
   },
   {
     "Name": "Mercenary Riot Guard",
-    "Roles": [ 0 ]
+    "Roles": [ "Defense" ]
   },
   {
     "Name": "Hand Sentry",
-    "Roles": [ 0 ]
+    "Roles": [ "Defense" ]
   },
   {
     "Name": "Luke Cage",
-    "Roles": [ 0 ]
+    "Roles": [ "Defense" ]
   },
   {
     "Name": "Kingpin",
-    "Roles": [ 0 ]
+    "Roles": [ "Defense" ]
   },
   {
     "Name": "Scarlet Witch",
-    "Roles": [ 0, 2 ]
+    "Roles": [ "Defense", "Utility" ]
   },
   {
     "Name": "Ant-Man",
-    "Roles": [ 1 ]
+    "Roles": [ "Purge" ]
   },
   {
     "Name": "Jessica Jones",
-    "Roles": [ 1 ]
+    "Roles": [ "Purge" ]
   },
   {
     "Name": "Hand Archer",
-    "Roles": [ 1 ]
+    "Roles": [ "Purge" ]
   },
   {
     "Name": "S.H.I.E.L.D. Operative",
-    "Roles": [ 1 ]
+    "Roles": [ "Purge" ]
   },
   {
     "Name": "Elektra",
-    "Roles": [ 1 ]
+    "Roles": [ "Purge" ]
   },
   {
     "Name": "Hawk-Eye",
-    "Roles": [ 1, 2 ]
+    "Roles": [ "Purge", "Utility" ]
   },
   {
     "Name": "Black Widow",
-    "Roles": [ 1, 2 ]
+    "Roles": [ "Purge", "Utility" ]
   },
   {
     "Name": "Dr Strange",
-    "Roles": [ 1, 2 ]
+    "Roles": [ "Purge", "Utility" ]
   },
   {
     "Name": "Quake",
-    "Roles": [ 1, 3 ]
+    "Roles": [ "Purge", "AOE" ]
   },
   {
     "Name": "Vision",
-    "Roles": [ 1, 2, 3 ]
+    "Roles": [ "Purge", "Utility", "AOE" ]
   },
   {
     "Name": "Yondu",
-    "Roles": [ 1, 2, 3 ]
+    "Roles": [ "Purge", "Utility", "AOE" ]
   },
   {
     "Name": "Nick Fury",
-    "Roles": [ 2 ]
+    "Roles": [ "Utility" ]
   },
   {
     "Name": "Mercenary Lieutenant",
-    "Roles": [ 2 ]
+    "Roles": [ "Utility" ]
   },
   {
     "Name": "Black Panther",
-    "Roles": [ 2 ]
+    "Roles": [ "Utility" ]
   },
   {
     "Name": "Mordo",
-    "Roles": [ 2 ]
+    "Roles": [ "Utility" ]
   },
   {
     "Name": "Spider-Man",
-    "Roles": [ 2 ]
+    "Roles": [ "Utility" ]
   },
   {
     "Name": "Nobu",
-    "Roles": [ 2 ]
+    "Roles": [ "Utility" ]
   },
   {
     "Name": "Cable",
-    "Roles": [ 2 ]
+    "Roles": [ "Utility" ]
   },
   {
     "Name": "Thanos",
-    "Roles": [ 2, 3, 4 ]
+    "Roles": [ "Utility", "AOE", "Burst" ]
   },
   {
     "Name": "Ultron",
-    "Roles": [ 2, 3, 4 ]
+    "Roles": [ "Utility", "AOE", "Burst" ]
   },
   {
     "Name": "Star-Lord",
-    "Roles": [ 2, 4 ]
+    "Roles": [ "Utility", "Burst" ]
   },
   {
     "Name": "Okoye",
-    "Roles": [ 2, 4 ]
+    "Roles": [ "Utility", "Burst" ]
   },
   {
     "Name": "Korath",
-    "Roles": [ 2, 4 ]
+    "Roles": [ "Utility", "Burst" ]
   },
   {
     "Name": "Loki",
-    "Roles": [ 2, 4 ]
+    "Roles": [ "Utility", "Burst" ]
   },
   {
     "Name": "Thor",
-    "Roles": [ 3 ]
+    "Roles": [ "AOE" ]
   },
   {
     "Name": "Ms Marvel",
-    "Roles": [ 3 ]
+    "Roles": [ "AOE" ]
   },
   {
     "Name": "Crossbones",
-    "Roles": [ 3 ]
+    "Roles": [ "AOE" ]
   },
   {
     "Name": "IronMan",
-    "Roles": [ 3, 4 ]
+    "Roles": [ "AOE", "Burst" ]
   },
   {
     "Name": "Rocket Raccoon",
-    "Roles": [ 3, 4 ]
+    "Roles": [ "AOE", "Burst" ]
   },
   {
     "Name": "Winter Soldier",
-    "Roles": [ 4 ]
+    "Roles": [ "Burst" ]
   },
   {
     "Name": "Deadpool",
-    "Roles": [ 4 ]
+    "Roles": [ "Burst" ]
   },
   {
     "Name": "Mercenary Sniper",
-    "Roles": [ 4 ]
+    "Roles": [ "Burst" ]
   },
   {
     "Name": "DareDevil",
-    "Roles": [ 4 ]
+    "Roles": [ "Burst" ]
   },
   {
     "Name": "Bullseye",
-    "Roles": [ 4 ]
+    "Roles": [ "Burst" ]
   },
   {
     "Name": "Gamora",
-    "Roles": [ 4 ]
+    "Roles": [ "Burst" ]
   }
 ]
